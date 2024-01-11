@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+  url("./fonts/poppinsmedium.woff2") format("woff2"),
+  url("./fonts/poppinsmedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+  url("./fonts/poppinsbold.woff2") format("woff2"),
+  url("./fonts/poppinsbold.woff") format("woff"),
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+img{
+  display: block;
+}
+.container{
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.visally-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+.site-header{
+  padding-top: 48px;
+  padding-bottom: 78px;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  margin-right: auto;
+}
+.nav-list{
+  display: flex;
+}
+.unstyle{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.nav-list-item{
+  margin-right: 29px;
+}
+.nav-list-item:nth-child(2){
+  margin-right: 32px;
+}
+.nav-list-link{
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #9E9AA8;
+}
+.sign-up{
+  padding: 9px 23px 8px 24px;
+  border-radius: 28px;
+  background-color: #2bd0d0;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  text-decoration: none;
+}
+a:nth-child(2){
+  padding: 10px 37px 7px;
+}
+.hero{
+  padding-top: 61px;
+  padding-bottom: 222px;
+  background-image: url("./images/bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 474px), calc(50% - 75px) ;
+}
+.hero-wrapper{
+  position: relative;
+}
+.content-wrapper{
+  width: 565px;
+}
+.main-title{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: #34313D;
+}
+.hero-desc{
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #9e9aa8;
+}
+.hero-link{
+  display: inline-block;
+  padding: 14px 40px 12px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  border-radius: 28px;
+  background-color: #2bd0d0;
+  text-decoration: none;
+}
+.hero-form{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -325px;
+  gap: 24px;
+  padding: 52px 64px 52px 65px;
+  background-image: url("./images/purplepathtwo.png");
+  background-size: cover;
+  border-radius: 10px;
+}
+.hero-input{
+  width: 769px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #34313d;
+  outline: none;
+  border: 1px solid transparent;
+}
+.hero-input:focus {
+  border: 1px solid transparent;
+}
+.hero-input::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #34313d;
+  opacity: 0.5;
+}
+.hero-btn{
+  padding: 18px 40px 18px 41px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #2bd0d0;
+}
+.hero-btn:hover {
+  background-color: #9ae3e3;
+}
+
+.statistics {
+  padding: 204px 0 208px;
+  background-color: #eff1f7;
+}
+.statistics-main-title{
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #34313D;
+}
+.statistics-text-wrapper {
+  width: 540px;
+  margin: 0 auto;
+}
+.statistics-desc{
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.123px;
+  color: #9E9AA8;
+}
+.statistics-list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-image: url("./images/line.svg");
+  background-repeat: no-repeat;
+  background-position: top 152px center;
+}
+.statistics-list-item{
+  position: relative;
+  padding: 72px 32px 41px;
+  width: 350px;
+  border-radius: 5px;
+  background: #fff;
+}
+.statistics-list-item:nth-child(2) {
+  top: 44px;
+}
+.statistics-list-item:last-child {
+  top: 88px;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -44px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #3a3054;
+}
+.suptitle{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #34313d;
+}
+.desc{
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #9e9aa8;
+}
+.site-article{
+  padding: 57px 0 69px;
+  background-image: url("./images/purplepathone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.article-title{
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+}
+.acticle-link{
+  display: block;
+  width: 197px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 28px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2bd0d0;
+}
+.a-link{
+  margin: 0 auto;
+}
+.site-footer{
+  padding-top: 72px;
+  padding-bottom: 70px;
+  background-color: #232127;
+}
+.contentt-wrapper{
+  display: flex;
+}
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo{
+  margin-right: 261px;
+}
+.Features{
+  margin-right: 78px;
+}
+.Resources{
+  margin-right: 106px;
+}
+.Company{
+  margin-right: 101px;
+}
+.bold{
+  display: block;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #fff;
+}
+.footer-item-link{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.234px;
+  color: #bfbfbf;
+  text-decoration: none;
+}
